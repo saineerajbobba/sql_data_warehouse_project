@@ -6,6 +6,17 @@
 	This script is required to load the data from the source system into the tables we created. 
 	before we create it we truncate the tables if it already has been loaded, and reload the data from the source system files.
 
+Perfroms 2 Actions:
+	- Truncates the bronze layer tables before loading data
+	- USES BULK INSERT to load data from csv file to the bronze layer tables
+
+Parameters:
+	None
+	This stored procedure does not accept any parameters or returns any values
+
+Usage Example:
+	~EXEC bronze.load_bronze;
+
  WARNINGS!:
 	Running this script in its entirety will TRUNCATE [DELETE ROW DATA] the entire tables we created. ALL THE DATA that may have been loaded into the tables
 	will ALL be PERMANENTALY DELETED. So proceed with atmost caution and ENSURE we have the REQUIRED BACKUPS, if we have to run this scripts
