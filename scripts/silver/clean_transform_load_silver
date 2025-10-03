@@ -4,9 +4,13 @@ CLEANING THE DATA and TRANSFORMATION OF THE DATA
 ================================================
 */
 
----------------------
---MAIN FULL FIX QUERY
----------------------
+/*
+=================================
+---------------------------------
+--MAIN FULL INSERT  AND FIX QUERY
+---------------------------------
+=================================
+*/
 
 INSERT INTO silver.crm_cust_info (
 	cst_id,
